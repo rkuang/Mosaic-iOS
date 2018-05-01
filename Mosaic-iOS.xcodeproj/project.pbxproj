@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DFC663B4E4A2F8EE3CE7D49 /* Pods_Mosaic_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3705C3D848C9BCE1106390 /* Pods_Mosaic_iOS.framework */; };
+		DC450FA92097FAFE001BFDEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC450FA82097FAFE001BFDEA /* GoogleService-Info.plist */; };
 		DCF3C2EF2097F83C006EC6BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3C2EE2097F83C006EC6BD /* AppDelegate.swift */; };
 		DCF3C2F12097F83C006EC6BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3C2F02097F83C006EC6BD /* ViewController.swift */; };
 		DCF3C2F42097F83C006EC6BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF3C2F22097F83C006EC6BD /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A3705C3D848C9BCE1106390 /* Pods_Mosaic_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mosaic_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDAB3E8F19EE8B18A95CE76 /* Pods-Mosaic-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mosaic-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mosaic-iOS/Pods-Mosaic-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DC450FA82097FAFE001BFDEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCF3C2EB2097F83C006EC6BD /* Mosaic-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mosaic-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF3C2EE2097F83C006EC6BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF3C2F02097F83C006EC6BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		DCF3C2F52097F83C006EC6BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCF3C2F82097F83C006EC6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCF3C2FA2097F83C006EC6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7A3B0560DBD969823D18E9 /* Pods-Mosaic-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mosaic-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mosaic-iOS/Pods-Mosaic-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFC663B4E4A2F8EE3CE7D49 /* Pods_Mosaic_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9576634345CE8A628331B4BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A3705C3D848C9BCE1106390 /* Pods_Mosaic_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2DED13F0D0CD49F77B3EC35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DDAB3E8F19EE8B18A95CE76 /* Pods-Mosaic-iOS.debug.xcconfig */,
+				DD7A3B0560DBD969823D18E9 /* Pods-Mosaic-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DCF3C2E22097F83B006EC6BD = {
 			isa = PBXGroup;
 			children = (
 				DCF3C2ED2097F83C006EC6BD /* Mosaic-iOS */,
 				DCF3C2EC2097F83C006EC6BD /* Products */,
+				A2DED13F0D0CD49F77B3EC35 /* Pods */,
+				9576634345CE8A628331B4BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				DCF3C2F52097F83C006EC6BD /* Assets.xcassets */,
 				DCF3C2F72097F83C006EC6BD /* LaunchScreen.storyboard */,
 				DCF3C2FA2097F83C006EC6BD /* Info.plist */,
+				DC450FA82097FAFE001BFDEA /* GoogleService-Info.plist */,
 			);
 			path = "Mosaic-iOS";
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCF3C2FD2097F83C006EC6BD /* Build configuration list for PBXNativeTarget "Mosaic-iOS" */;
 			buildPhases = (
+				80D2F7B8298CD165D5786247 /* [CP] Check Pods Manifest.lock */,
 				DCF3C2E72097F83B006EC6BD /* Sources */,
 				DCF3C2E82097F83B006EC6BD /* Frameworks */,
 				DCF3C2E92097F83B006EC6BD /* Resources */,
+				91A575EFEE414E4C51C1383C /* [CP] Embed Pods Frameworks */,
+				FA0703C4ACEF624FEA870C76 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,76 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCF3C2F92097F83C006EC6BD /* LaunchScreen.storyboard in Resources */,
+				DC450FA92097FAFE001BFDEA /* GoogleService-Info.plist in Resources */,
 				DCF3C2F62097F83C006EC6BD /* Assets.xcassets in Resources */,
 				DCF3C2F42097F83C006EC6BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80D2F7B8298CD165D5786247 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mosaic-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91A575EFEE414E4C51C1383C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mosaic-iOS/Pods-Mosaic-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mosaic-iOS/Pods-Mosaic-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA0703C4ACEF624FEA870C76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mosaic-iOS/Pods-Mosaic-iOS-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mosaic-iOS/Pods-Mosaic-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCF3C2E72097F83B006EC6BD /* Sources */ = {
@@ -272,6 +366,7 @@
 		};
 		DCF3C2FE2097F83C006EC6BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DDAB3E8F19EE8B18A95CE76 /* Pods-Mosaic-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +381,7 @@
 		};
 		DCF3C2FF2097F83C006EC6BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7A3B0560DBD969823D18E9 /* Pods-Mosaic-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
